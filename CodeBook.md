@@ -9,8 +9,8 @@ A full description of the original dataset as available from the [UCI Machine Le
 
 The data was taken from analysing 30 people (subjects) doing 6 activities with an attached smartphone (Samsung Galaxy S II) which measured sensor signals. The subject column is numbered sequentially from 1 to 30. The activity column has 6 different activity types numbered:
 1.            WALKING
-2.   WALKING_UPSTAIRS
-3. WALKING_DOWNSTAIRS
+2.        WALKING_UPSTAIRS
+3.        WALKING_DOWNSTAIRS
 4.            SITTING
 5.           STANDING
 6.             LAYING
@@ -19,7 +19,7 @@ The data was taken from analysing 30 people (subjects) doing 6 activities with a
 
 The tidydata.txt contains the result of the runAnalysis.R script which contains the columns:
 
-`[1] "1. activity_label"
+[1] "1. activity_label"
 [1] "2. subject_id"
 [1] "3. tBodyAcc-mean()-X"
 [1] "4. tBodyAcc-mean()-Y"
@@ -86,4 +86,4 @@ The tidydata.txt contains the result of the runAnalysis.R script which contains 
 [1] "65. fBodyBodyGyroMag-mean()"
 [1] "66. fBodyBodyGyroMag-std()"
 [1] "67. fBodyBodyGyroJerkMag-mean()"
-[1] "68. fBodyBodyGyroJerkMag-std()"`
+[1] "68. fBodyBodyGyroJerkMag-std()"

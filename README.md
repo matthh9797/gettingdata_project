@@ -12,7 +12,7 @@ The purpose of this project is to clean the dataset on wearable computing data f
 
 The data contained a feature matrix X with 561 features obtained from sensor signals from a smartphone attached to each subject and a label vector y which labelled each observation from X to an activity.
 
-## analysis
+### analysis
 
 The file runAnalysis.R:
 1. Merges the test and training data from the feature matrix X, label vector y and ID vector subject.
