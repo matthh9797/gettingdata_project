@@ -21,7 +21,8 @@ rm(list = c("X_test", "y_test", "subject_test",
 # 3. name columns
 colnames(X) <- features[,2]
 # subset columns 
-X_select <- X[(grepl(".mean().",colnames(X)) | grepl(".std().", colnames(X)))]
+# change to "mean\\(\\)|std\\(\\)"
+X_select <- X[grepl("mean\\(\\)|std\\(\\)", colnames(X))]
 # parse y into factor variable and name levels after activites
 y_f <- as.factor(y[,1])
 levels(y_f) <- activities[,2]
@@ -33,4 +34,5 @@ colnames(combineData)[2] <- "activity_label"
 # group by activity and subject ID
 library(dplyr)
 tidydata <- combineData %>% group_by(activity_label, subject_id) %>% summarise_each(funs(mean))
-
+# write table to file 
+write.table(tidydata, file = "data/tidydata.txt", col.names = TRUE, row.names = FALSE)
